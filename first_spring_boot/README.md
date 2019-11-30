@@ -24,10 +24,3 @@ server.port=80 은 properties 파일에서 적어줘야합니다.
 인텔리제이 설정방법
 - https://gmlwjd9405.github.io/2018/11/29/intellij-lombok.html
 
-(취소할듯 )
-ConfigurationProperties 설정을 위하여 다음의 그래들 한줄을 추가합니다. 
-- implementation 'org.springframework.boot:spring-boot-starter'
-
-# 58 p
-- https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config-profile-specific-properties
-을 참조하면 @Component 선언이 필요없어보입니다.
