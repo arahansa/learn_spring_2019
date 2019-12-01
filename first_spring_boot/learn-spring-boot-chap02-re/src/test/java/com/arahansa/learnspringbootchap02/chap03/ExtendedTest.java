@@ -1,5 +1,6 @@
 package com.arahansa.learnspringbootchap02.chap03;
 
+import com.arahansa.learnspringbootchap02.chap03.miscellaneous.SpringBootTestApplicationTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 

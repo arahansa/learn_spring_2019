@@ -1,4 +1,4 @@
-package com.arahansa.learnspringbootchap02.chap03;
+package com.arahansa.learnspringbootchap02.chap03.miscellaneous;
 
 import com.arahansa.learnspringbootchap02.LearnSpringBootChap02Application;
 import com.arahansa.learnspringbootchap02.service.BookService;
