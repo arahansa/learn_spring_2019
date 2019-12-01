@@ -5,6 +5,10 @@ import com.arahansa.learnspringbootchap02.domain.Book;
 import com.arahansa.learnspringbootchap02.service.BookService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.ModelMap;
 
@@ -14,11 +18,12 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
 
+@ExtendWith(MockitoExtension.class)
 public class MockBookControllerTest {
 
     BookController bookController;
+    @Mock
     BookService bookService;
     ExtendedModelMap model;
 
@@ -30,7 +35,6 @@ public class MockBookControllerTest {
     */
     @BeforeEach
     void setup(){
-        bookService = mock(BookService.class);
         bookController = new BookController(bookService);
         model = new ExtendedModelMap();
     }
